@@ -1,0 +1,294 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEF9E7;
+}
+
+p {
+    color: #555;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 600;    
+}
+
+h3 {
+    font-size: 2.0rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #333;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 1.60rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #333;
+    margin: 0px;
+}
+
+.container-fluid {
+    /*padding: 2% 15%;*/
+    padding: 5px 15%;
+}
+
+
+/* Title Section */
+
+#title {
+    background-color: #B22819;
+    color: #FEF9E7;
+    height: 75px;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: Ubuntu;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #FEF9E7 !important;
+}
+
+.nav-item {
+    padding-left: 30px;
+    
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+/* Games Button */
+
+.games-button {
+    margin: 5% 1% 5% 1%;
+}
+
+
+/* Title Image */
+
+.title-image {
+    background: url("../images/assassinate.jpg") center center;
+}
+
+
+
+/* Hero Section */
+
+#hero {
+    width: 100%;
+    height: 60vh;
+    background: url("../images/assassinate-flipped.jpg") center center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    border-bottom: 8px solid #B22819;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(56, 64, 70, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .container-fluid {
+    z-index: 2;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero h1 span {
+    border-bottom: 4px solid #B22819;
+  }
+  
+  #hero h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #B22819;
+    text-transform: uppercase;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #B22819;
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      height: calc(100vh - 70px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+/* Games Section */
+
+#games {
+    padding: 5% 10%;
+    background-color: #FEF9E7;
+}
+
+.game-card {
+    text-align: center;
+}
+
+.game-card:hover {
+    box-shadow: 2px 2px 5px #999;
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: #B22819;
+}
+
+.card-header h3 {
+    color: #FEF9E7;
+}
+
+.card-header h4 {
+    color: #FEF9E7;
+    padding: 0.25rem 0;
+}
+
+.card-body {
+    padding: 1.0rem 1.0rem 0 1.0rem;
+    background-color: #FEF9E7;
+}
+
+.game-image {
+    width: 250px;
+    margin-bottom: 1.25rem;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.game-image-ah {
+    width: 235px;
+    margin-bottom: 1.25rem;
+    box-shadow: 1px 1px 5px #999;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+    text-align: center;
+    background-color: #B22819;
+    color: #FEF9E7;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 5% 10%;
+}
+
+
+/* Footer section */
+
+#footer {
+    padding: 3%;
+    text-align: center;
+}
+
+
+
+/* REsources Section */
+
+#resources {
+    padding: 5% 10%;
+    background-color: #FEF9E7;
+}
+
+
+#btn-back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    /*border: none;*/ /* Remove borders */
+    border: solid 2px #FEF9E7;
+    outline: none; /* Remove outline */
+    background-color: #B22819; /* Set a background color */
+    color: #FEF9E7; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 15px;/* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #btn-back-to-top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+/* Inner Pages */
+
+.inner-page {
+    padding: 3% 5%;
+}
+
+.inner-page h4 {
+    padding: 1.5rem 0 1.0rem 0;
+}
+
+.inner-image {
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    padding:3px;
+}

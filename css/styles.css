@@ -1,4 +1,8 @@
 
+/* -------------- */
+/* HTML selectors */
+/* -------------- */
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FEF9E7;
@@ -8,46 +12,58 @@ p {
     color: #555;
 }
 
-h1 {
-    font-size: 3.5rem;
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 1600px) {
+    iframe {
+        width: 450px;
+        height: 253px;
+    }
+}
+
+@media (max-width: 1300px) {
+    iframe {
+        width: 350px;
+        height: 197px;
+    }
+}
+
+.container-fluid {
+    padding: 5% 15%;
+}
+
+
+/* ---------------- */
+/* Headings Section */
+/* ---------------- */
+
+.big-heading {
+    font-size: 3.25rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-h2 {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 600;    
-}
 
-h3 {
-    /*font-size: 2.0rem;*/
-    font-size: 1.60rem;
-    line-height: 1;
-    font-weight: 500;
-    color: #333;
-    margin: 0px;
-}
-
-.container-fluid {
-    /*padding: 2% 15%;*/
-    padding: 5px 15%;
-}
-
-
+/* ------------- */
 /* Title Section */
+/* ------------- */
 
 #title {
     background-color: #B22819;
-    color: #FEF9E7;
+    color: green;/* #FEF9E7;*/
     height: 75px;
 }
 
 
+/* -------------- */
 /* Navigation Bar */
+/* -------------- */
 
 .navbar {
-    padding: 0 0 4.5rem;
+    padding: 5px 15%;
 }
 
 .navbar-brand {
@@ -69,22 +85,9 @@ h3 {
 }
 
 
-/* Games Button */
-
-.games-button {
-    margin: 5% 1% 5% 1%;
-}
-
-
-/* Title Image */
-
-.title-image {
-    background: url("../images/assassinate.jpg") center center;
-}
-
-
-
+/* ------------ */
 /* Hero Section */
+/* ------------ */
 
 #hero {
     width: 100%;
@@ -94,9 +97,9 @@ h3 {
     position: relative;
     padding: 0;
     border-bottom: 6px solid #B22819;
-  }
+ }
   
-  #hero:before {
+ #hero:before {
     content: "";
     background: rgba(56, 64, 70, 0.7);
     position: absolute;
@@ -104,55 +107,37 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-  }
+ }
   
-  #hero .container-fluid {
+ #hero .container-fluid {
     z-index: 2;
-  }
+ }
   
-  #hero h1 {
-    margin: 0 0 10px 0;
+ #hero h1 {
+    margin: 0 0 2.50rem 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #fff;
-  }
+    color: #FEF9E7;
+ }
   
-  #hero h1 span {
+ #hero h1 span {
     border-bottom: 4px solid #B22819;
-  }
+ }
   
-  #hero h2 {
+ #hero h2 {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 30px;
     font-size: 24px;
-  }
+ }
   
-  #hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    letter-spacing: 2px;
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 4px;
-    transition: ease-in-out 0.3s;
-    color: #fff;
-    background: #B22819;
-    text-transform: uppercase;
-  }
-  
-  #hero .btn-get-started:hover {
-    background: #B22819;
-  }
-  
-  @media (max-width: 992px) {
+ @media (max-width: 992px) {
     #hero {
       height: calc(100vh - 70px);
     }
-  }
+ }
   
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     #hero h1 {
       font-size: 30px;
       line-height: 36px;
@@ -162,19 +147,27 @@ h3 {
       line-height: 24px;
       margin-bottom: 30px;
     }
-  }
+ }
+
+.title-image {
+    background: url("../images/assassinate.jpg") center center;
+}
 
 
 
+
+/* ------------- */
 /* Games Section */
+/* ------------- */
 
 #games {
-    padding: 5% 10%;
+    /*padding: 5% 10%;*/
     background-color: #FEF9E7;
 }
 
 .game-card {
     text-align: center;
+    margin-bottom: 1.50rem;
 }
 
 .game-card:hover {
@@ -188,11 +181,16 @@ h3 {
 
 .card-header h3 {
     color: #FEF9E7;
+    font-size: 1.60rem;
+    line-height: 1;
+    font-weight: 500;
+    margin: 0px;
 }
 
-.card-header h4 {
-    color: #FEF9E7;
-    padding: 0.25rem 0;
+@media (max-width: 1200px) {
+    .card-header h3 {
+        font-size: 1.30rem;
+    }
 }
 
 .card-body {
@@ -206,13 +204,17 @@ h3 {
     box-shadow: 1px 1px 5px #999;
 }
 
-.game-image-ah {
-    width: 235px;
-    margin-bottom: 1.25rem;
-    box-shadow: 1px 1px 5px #999;
+@media (max-width: 1275px) {
+    .game-image {
+        width: 200px;
+
+    }
 }
 
+
+/* -------------------- */
 /* Testimonials Section */
+/* -------------------- */
 
 #testimonials {
     text-align: center;
@@ -226,12 +228,30 @@ h3 {
     margin: 20px;
 }
 
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 600;  
+}
+
 .carousel-item {
     padding: 5% 10%;
 }
 
 
+/* ----------------- */
+/* Resources Section */
+/* ----------------- */
+#resources {
+    /*padding: 5% 10%;*/
+    background-color: #FEF9E7;
+}
+
+
+
+/* -------------- */
 /* Footer section */
+/* -------------- */
 
 #footer {
     padding: 3%;
@@ -240,13 +260,9 @@ h3 {
 
 
 
-/* REsources Section */
-
-#resources {
-    padding: 5% 10%;
-    background-color: #FEF9E7;
-}
-
+/* ------------------ */
+/* Back to top button */
+/* ------------------ */
 
 #btn-back-to-top {
     display: none; /* Hidden by default */
@@ -265,16 +281,14 @@ h3 {
     font-size: 18px; /* Increase font size */
   }
   
-  #btn-back-to-top:hover {
+#btn-back-to-top:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-  }
-
-
-/* Inner Pages */
-
-.inner-page {
-    padding: 2% 0%;
 }
+
+
+/* ----------- */
+/* Inner Pages */
+/* ----------- */
 
 .inner-page h4 {
     padding-top: 1.5rem;

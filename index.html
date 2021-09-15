@@ -20,18 +20,18 @@
 </head>
 
 <body>
-
-      <!-- Back to top button -->
+  <!-- ------------------ -->
+  <!-- Back to top button -->
+  <!-- ------------------ -->
   <button onclick="topFunction()" id="btn-back-to-top" title="Go to top">
     <i class="fas fa-arrow-up"></i>
   </button>
 
   <section id="title">
 
-    <div class="container-fluid">
-
+      <!-- ------- -->
       <!-- Nav Bar -->
-
+      <!-- ------- -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">patres conscripti</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,11 +39,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <!--
-              <li class="nav-item">
-                  <a class="nav-link" href="">Home</a>
-              </li>
-            -->
               <li class="nav-item">
                   <a class="nav-link" href="#games">Games</a>
               </li>
@@ -54,123 +49,116 @@
         </div>
       </nav>
 
-    </div>
-
   </section>
 
+  <!-- ------------ -->
   <!-- Hero Section -->
-
+  <!-- ------------ -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
 
-     <div class="container-fluid" data-aos="fade-up">
+    <div class="container-fluid" data-aos="fade-up">
 
       <h1>Tools for <span>honorable</span> senators.</h1>
-      <a type="button" class="btn btn-outline-light btn-lg games-button" href="#games">Games</a>
+      <a type="button" class="btn btn-outline-light btn-lg" href="#games">Games</a>
       <a type="button" class="btn btn-outline-light btn-lg" href="#resources">Resources</a>
     </div>
 
   </section>
 
 
+  <!-- ------------- -->
   <!-- Games Section -->
-
+  <!-- ------------- -->
   <section id="games">
 
-    <div class="row">
+    <div class="container-fluid">
+ 
+      <div class="row">
 
-      <div class="col col-lg-3" onclick="gotoPage('game-aces.html')">
-        <div class="card game-card">
-          <div class="card-header">
-            <h3>Game ACES</h3>
-          </div>
-          <div class="card-body">
-            <img src="images/VGRoRBox-edit.jpg" class="game-image" />
-            <p>A Republic of Rome Roll20 game<br/>
-                covering the Middle Republic.<br/>
-                Status: Active
-            </p> 
-            <!-- <button class="btn btn-danger" type="button">Details</button> -->
+        <div class="col col-lg-4 col-md-6" onclick="gotoPage('game-aces.html')">
+          <div class="card game-card">
+            <div class="card-header">
+              <h3>Game ACES</h3>
+            </div>
+            <div class="card-body">
+              <img src="images/VGRoRBox-edit.jpg" class="game-image" />
+              <p>A Republic of Rome Roll20 game<br/>
+                  covering the Middle Republic.<br/>
+                  Status: Active
+              </p> 
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col col-lg-3" onclick="gotoPage('game-nr-2021.html')">
-        <div class="card game-card">
-          <div class="card-header">
-            <h3>Nova Roma 2021</h3>
-          </div>
-          <div class="card-body">
-            <img src="images/VGRoRBox-edit.jpg" class="game-image" />
-            <p>The 2021 Republic of Rome<br/>
-                game hosted by Nova Roma.<br/>
-                Status: Complete
-            </p> 
-            <!-- <button class="btn btn-danger" type="button">Details</button> -->
+        <div class="col col-lg-4 col-md-6" onclick="gotoPage('game-nr-2021.html')">
+          <div class="card game-card">
+            <div class="card-header">
+              <h3>Nova Roma 2021</h3>
+            </div>
+            <div class="card-body">
+              <img src="images/VGRoRBox-edit.jpg" class="game-image" />
+              <p>The 2021 Republic of Rome<br/>
+                  game hosted by Nova Roma.<br/>
+                  Status: Active
+              </p> 
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col col-lg-3" onclick="gotoPage('game-primus.html')">
-        <div class="card game-card">
-          <div class="card-header">
-            <h3>Game Primus</h3>
-          </div>
-          <div class="card-body">
-            <img src="images/primus.jpg" class="game-image" />
-            <p>A Republic of Rome PBEM game<br/>
-                covering the Middle Republic.<br/>
-                Status: Complete
-            </p> 
-            <!-- <button class="btn btn-danger" type="button">Details</button> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="col col-lg-3" onclick="gotoPage('game-nr-2020.html')">
-        <div class="card game-card">
-          <div class="card-header">
-            <h3>Nova Roma 2020</h3>
-          </div>
-          <div class="card-body">
-            <img src="images/VGRoRBox-edit.jpg" class="game-image" />
-            <p>The 2020 Republic of Rome<br/>
-                game hosted by Nova Roma.<br/>
-                Status: Complete
-            </p> 
-            <!-- <button class="btn btn-danger" type="button">Details</button> -->
+        <div class="col col-lg-4 col-md-6" onclick="gotoPage('game-primus.html')">
+          <div class="card game-card">
+            <div class="card-header">
+              <h3>Game Primus</h3>
+            </div>
+            <div class="card-body">
+              <img src="images/primus.jpg" class="game-image" />
+              <p>A Republic of Rome PBEM game<br/>
+                  covering the Middle Republic.<br/>
+                  Status: Complete
+              </p> 
+            </div>
           </div>
         </div>
-      </div>
-
-    </div>
-
-    <br/>
-
-    <div class="row">
-
-      <div class="col col-lg-3" onclick="gotoPage('game-equites.html')">
-        <div class="card game-card">
-          <div class="card-header">
-            <h3>Game Equites</h3>
-          </div>
-          <div class="card-body">
-            <img src="images/equites.jpg" class="game-image" />
-            <p>A Republic of Rome PBEM game<br/> 
-                covering the Early Republic.<br/>
-                Status: Complete
-            </p> 
-            <!-- <button class="btn btn-danger" type="button">Details</button> -->
+        
+        <div class="col col-lg-4 col-md-6" onclick="gotoPage('game-nr-2020.html')">
+          <div class="card game-card">
+            <div class="card-header">
+              <h3>Nova Roma 2020</h3>
+            </div>
+            <div class="card-body">
+              <img src="images/VGRoRBox-edit.jpg" class="game-image" />
+              <p>The 2020 Republic of Rome<br/>
+                  game hosted by Nova Roma.<br/>
+                  Status: Complete
+              </p> 
+            </div>
           </div>
         </div>
+
+        <div class="col col-lg-4 col-md-6" onclick="gotoPage('game-equites.html')">
+          <div class="card game-card">
+            <div class="card-header">
+              <h3>Game Equites</h3>
+            </div>
+            <div class="card-body">
+              <img src="images/equites.jpg" class="game-image" />
+              <p>A Republic of Rome PBEM game<br/> 
+                  covering the Early Republic.<br/>
+                  Status: Complete
+              </p> 
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
   </section>
 
-
-    <!-- Testimonials Section -->
-
+  <!-- -------------------- -->
+  <!-- Testimonials Section -->
+  <!-- -------------------- -->
   <section id="testimonials">
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="carousel"  data-interval="9000">
@@ -185,7 +173,7 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <h2>"I've found the daggers available on Patres Conscripti to be of the highest quality."</h2>
+          <h2 class="testimonial-text">"I have found the daggers available on Patres Conscripti to be of the finest quality."</h2>
           <img class="testimonial-image" src="images/brutus.jpg" alt="Brutus">
           <em>Marcus Junius Brutus</em>
         </div>
@@ -213,91 +201,77 @@
 
   </section>
 
-
+<!-- ----------------- -->
 <!-- Resources Section -->
-
+<!-- ----------------- -->
 <section id="resources">
 
-  <div class="row">
+  <div class="container-fluid">
 
-    <div class="col col-lg-3">
-      <div class="card game-card">
-        <div class="card-header">
-          <h3>Living Rules v1.06a</h3>
-        </div>
-        <div class="card-body">
-          <img src="images/scroll.jpg" class="game-image" />
-          <p>A web version of the Living Rules<br/>
-              for the Valley Games Edition of<br/>
-              The Republic of Rome.
-          </p> 
-          <!-- <button class="btn btn-danger" type="button">Details</button> -->
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card game-card">
+          <div class="card-header">
+            <h3>Living Rules v1.06a</h3>
+          </div>
+          <div class="card-body">
+            <img src="images/scroll.jpg" class="game-image" />
+            <p>A web version of the Living Rules<br/>
+                for the Valley Games Edition of<br/>
+                The Republic of Rome.
+            </p> 
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col col-lg-3">
-      <div class="card game-card">
-        <div class="card-header">
-          <h3>Revenue Generator</h3>
-        </div>
-        <div class="card-body">
-          <img src="images/coins.jpg" class="game-image" />
-          <p>A tool that will streamline<br/> 
-              the Revenue Phase of your<br/>
-              Republic of Rome games.
-          </p> 
-          <!-- <button class="btn btn-danger" type="button">Details</button> -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card game-card">
+          <div class="card-header">
+            <h3>Revenue Generator</h3>
+          </div>
+          <div class="card-body">
+            <img src="images/coins.jpg" class="game-image" />
+            <p>A tool that will streamline<br/> 
+                the Revenue Phase of your<br/>
+                Republic of Rome games.
+            </p> 
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col col-lg-3">
-      <div class="card game-card">
-        <div class="card-header">
-          <h3>Fusce Hendrerit</h3>
-        </div>
-        <div class="card-body">
-          <img src="images/soldier.jpg" class="game-image" />
-          <p>Cras at gravida sapien, in<br/> 
-             commodo nunc. Etiam vel magna<br/>
-             magna. Mauris at eros risus. 
-          </p> 
-          <!-- <button class="btn btn-danger" type="button">Details</button> -->
+<!--
+      <div class="col-lg-4 col-md-6">
+        <div class="card game-card">
+          <div class="card-header">
+            <h3>Vivamus Nec Ligula</h3>
+          </div>
+          <div class="card-body">
+            <img src="images/chariot-racing.jpg" class="game-image" />
+            <p>Donec eu magna in quam<br/>
+              sagittis aliquet. Duis eget<br/>
+              sem vehicula.
+            </p> 
+          </div>
         </div>
       </div>
-    </div>
+-->
 
-    <div class="col col-lg-3">
-      <div class="card game-card">
-        <div class="card-header">
-          <h3>Vivamus Nec Ligula</h3>
-        </div>
-        <div class="card-body">
-          <img src="images/chariot-racing.jpg" class="game-image" />
-          <p> Donec eu magna in quam<br/>
-             sagittis aliquet. Duis eget<br/>
-             sem vehicula.
-          </p> 
-          <!-- <button class="btn btn-danger" type="button">Details</button> -->
-        </div>
-      </div>
     </div>
 
   </div>
 
 </section>
 
+  <!-- ------ -->
+  <!-- Footer -->
+  <!-- ------ -->
+  <footer id="footer">
 
-<!-- Footer -->
+    <p>© Copyright 2021 Patres Conscripti</p>
+    <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
 
- <footer id="footer">
-
-  <p>© Copyright 2021 Patres Conscripti</p>
-  <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
-
-</footer>
-
+  </footer>
 
 
   <!-- Bootstrap scripts -->

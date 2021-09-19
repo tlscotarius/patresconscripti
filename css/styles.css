@@ -41,9 +41,9 @@ iframe {
 /* ---------------- */
 
 .big-heading {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     line-height: 1.5;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 
@@ -82,6 +82,7 @@ iframe {
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    margin-top: 5px;
 }
 
 
@@ -130,6 +131,10 @@ iframe {
     margin-bottom: 30px;
     font-size: 24px;
  }
+
+ .hero-button {
+     margin-right: 0.5rem;
+ }
   
  @media (max-width: 992px) {
     #hero {
@@ -152,7 +157,6 @@ iframe {
 .title-image {
     background: url("../images/assassinate.jpg") center center;
 }
-
 
 
 
@@ -282,7 +286,8 @@ iframe {
   }
   
 #btn-back-to-top:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    /*background-color: #555;*/ /* Add a dark-grey background on hover */
+    background-color: #D22819;
 }
 
 
@@ -300,4 +305,94 @@ iframe {
     border-radius: 4px; 
     padding:3px;
 	width: 350px;
+}
+
+.btn-outline-danger {
+    color: #B22819;
+    border-color: #B22819;
+}
+
+.btn-outline-danger:hover {
+    color: #FEF9E7;
+    background-color: #B22819;
+}
+
+.inner-section {
+    padding: 1.5rem 0;
+}
+
+.suppress-padding-top {
+    padding-top: 0px !important;
+}
+
+.suppress-padding-bottom {
+    padding-bottom: 0px !important;
+}
+
+.pbem-h5 {
+    padding-top: 3.0rem;
+}
+
+
+
+/*
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #dc3545;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  */
+  
+
+/* ----------------- */
+/* Revenue Generator */
+/* ----------------- */
+  
+  /* Add a vertical scroll for the body of the modal used in RevGen  */
+.modal-dialog{overflow-y: initial !important;}
+.modal-body{height: 60vh;  overflow-y: auto;}
+.text-yellow{color:#FEF9E7 !important;}
+
+.font-plain{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-danger {
+    color: #FEF9E7;
+    background-color: #B22819;
+}
+
+.btn-danger:hover {
+    color: #FEF9E7;
+    background-color: #D22819;
 }

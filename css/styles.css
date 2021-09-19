@@ -116,9 +116,10 @@ iframe {
   
  #hero h1 {
     margin: 0 0 2.50rem 0;
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 700;
-    line-height: 56px;
+    line-height: 48px;
+    letter-spacing: 0.05rem;
     color: #FEF9E7;
  }
   
@@ -235,7 +236,7 @@ iframe {
 .testimonial-text {
     font-size: 3rem;
     line-height: 1.5;
-    font-weight: 600;  
+    font-weight: 500;  
 }
 
 .carousel-item {

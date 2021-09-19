@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Patres Conscripti</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+      <!-- Back to top button -->
+  <button onclick="topFunction()" id="btn-back-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="title">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">patres conscripti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+            <!--
+              <li class="nav-item">
+                  <a class="nav-link" href="#games">Games</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#resources">Resources</a>
+              </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+
+  </section>
+
+  <!-- -------------- -->
+  <!-- Header Section -->
+  <!-- -------------- -->
+  <section id="top" class="inner-page">
+    <div class="container-fluid suppress-padding-bottom">
+
+      <div class="row">
+        <div class="col-lg-6">
+         <h1 class="big-heading">Game Primus</h1>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="pt-4">
+            <a href="game-primus.html" class="btn btn-outline-danger mr-3" role="button">Primus Home</a>
+            <a href="game-primus-factions.html" class="btn btn-outline-danger mr-3" role="button">Factions</a>
+            <a href="game-primus-turnhistory.html" class="btn btn-outline-danger mr-3" role="button">Turn History</a>
+          </div>
+
+        </div>
+      </div>
+
+     </div>
+  </section>
+
+
+  <!-- ----------------------------- -->
+  <!-- State of the Republic Section -->
+  <!-- ----------------------------- -->
+  <section id="stateofrepublic" class="inner-section">
+    <div class="container-fluid suppress-padding-top">
+
+      <style>
+         .priorconsul {background-color:green;color:white;}
+         .office {background-color:red;color:white;}
+         .knight {background-color:royalblue;color:white;}
+         .concession {background-color:sienna;color:white;}/* chocolate */
+         .money {background-color:gold;color:black;}
+         .corrupt {background-color:black;color:white;font-style:italic;}
+         .priest {background-color:mediumorchid;color:white;}
+         .veto {background-color:slategray;color:white;}
+         .leader {background-color:brown;color:white;}
+         .legion {background-color:plum;color:black;}
+         .absent {background-color:beige;color:black;}
+         
+         .used {text-decoration:line-through;}
+         .unprosecuted {background-color:red;color:white;}
+         .manpowershortage {background-color:red;color:white;}
+         .drought {background-color:red;color:white;}
+         
+         .pill {
+            /*background-color:green;*/
+            border-radius:5px;
+            border:1px solid black;
+            display:inline-block;
+            cursor:normal;
+            /*color:#ffffff;*/
+            font-size:12px;
+            padding:1px 5px;
+            /*text-decoration:none;*/
+            /*text-shadow:0px 1px 0px #2f6627;*/
+            margin: 1px 0px 1px 0px;
+         }
+         </style>
+         
+         <!-- <a class="pill unprosecuted">Unprosecuted</a> -->
+         
+         <h3>State of the Republic</h3>
+         <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+               <td width="150px">Treasury:</td>
+               <td>121t</td>
+            </tr>
+            <tr>
+               <td>Unrest Level:</td>
+               <td>5</td>
+            </tr>
+            <tr>
+               <td>Land Bills:</td>
+               <td>Type III</td>
+            </tr>
+            <tr>
+               <td>Legions:</td>
+               <td>18 regular, 3 veteran</td>
+            </tr>
+            <tr>
+               <td>Fleets:</td>
+               <td>3</td>
+            </tr>
+            
+            <tr>
+               <td>Active Wars:</td>
+               <td>3rd Macedonian War + Illyricum &nbsp;&nbsp;&nbsp;<a class="pill unprosecuted">Unprosecuted</a></td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td style="padding-bottom:10px;">&nbsp;&nbsp;&nbsp; (8+2/5; D8/S14; Spoils: 35t; Attacks Illyricum and Macedonia)</td>
+            </tr>     
+         
+            <tr>
+               <td></td>
+               <td>Sicilian Slave Revolt  &nbsp;&nbsp;&nbsp;<a class="pill drought">Drought</a></td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td style="padding-bottom:10px;">&nbsp;&nbsp;&nbsp; (4/0; D17/S15; Attacks Sicilia; Eliminates Sicilian Grain concession.) </td>
+            </tr>  
+         
+            <tr>
+               <td>Active Leaders:</td>
+               <td>-</td>
+            </tr>
+         
+            <tr>
+               <td>Inactive Wars:</td>
+               <td>Cilician Pirates   &nbsp;&nbsp;&nbsp;<a class="pill drought">Drought</a></td>
+            </tr>
+            <tr>
+               <td> </td>
+               <td style="padding-bottom:10px;">&nbsp&nbsp&nbsp (3/2/8; D18/S15; Spoils: 10t; Attacks Sardinia et Corsica and Bithynia; Victory creates province of Cilicia et Cyprus.)</td>
+            </tr>
+            
+            <tr>
+               <td>Imminent Wars:</td>
+               <td>-</td>
+            </tr> 
+            
+            <tr>
+               <td>Cards Remaining:</td>
+               <td>26</td>
+            </tr>
+            <tr>
+               <td>HRAO:</td>
+               <td>Aelius of Manus</td>
+            </tr>
+            <tr>
+               <td>Pres. Mag.:</td>
+               <td>Aelius of Manus</td>
+            </tr>
+         </table>
+         
+         <br/>
+         <b><u>Legions</u></b> <br/>
+         <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+               <td>I - XXI</td>
+               <td>&nbsp In Rome</td>
+            </tr>
+         </table>
+         
+         
+         <br/>
+         <b><u>Veteran Legion Allegiance</u></b> <br/>
+         <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+               <td>VII</td>
+               <td>&nbsp Flaminius of Manus</td>
+            </tr>
+            <tr>
+               <td>XV</td>
+               <td>&nbsp C. Marius of Parma</td>
+            </tr>   
+            <tr>
+               <td>V</td>
+               <td>&nbsp Cassius of Parma</td>
+            </tr> 
+         </table>
+         
+         
+         <br/>
+         <b><u>Fleets</u></b> <br/>
+         <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+               <td>I - III</td>
+               <td>&nbsp In Rome</td>
+            </tr>
+         </table>
+         
+         
+         <br/>
+         <b><u>Forum</u></b><br/>
+         <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+               <td width="115px">Senators:</td>
+               <td>Fabius, Furius</td>
+            </tr>
+            <tr>
+               <td>Concessions:</td>
+               <td>-</td>
+            </tr>
+            <tr>
+               <td>Events:</td>
+               <td>-</td>
+            </tr>
+            <tr>
+               <td>Provinces:</td>
+               <td>Gallia Narbonesis, Gallia Cisalpina, Hispania Ulterior</td>
+            </tr>
+         </table>
+         <br/>
+         
+         <b><u>Curia</u></b><br/>
+         <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+               <td width="115px">Senators:</td>
+               <td>Aurelius, Manlius, Sulpicius</td>
+            </tr>
+            <tr>
+               <td>Concessions:</td>
+               <td>Sicilian Grain</td>
+            </tr>
+            <tr>
+               <td>Leaders:</td>
+               <td>-</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+         
+         <br/>
+         <b><u>Provinces</u></b> <br/>
+          
+         <table border="0" cellspacing="8" cellpadding="0">
+            <tr>
+               <td align="left">  </td>
+               <td align="center"><i>Base Forces</i></td>
+               <td align="center"><i>Armies</i></td>
+               <td align="center"><i>Fleets</i></td>
+               <td align="center"><i>Max (Armies/Fleets)</i></td>
+               <td align="center"><i>Garrison</i></td>
+               <td align="center"><i>Personal Income</i></td>
+               <td align="center"><i>State Income</i></td>
+               <td align="center"><i>Tax</i></td>
+              <td align="center"><i>Defends</i></td>
+               <td align="center"><i>Term</i></td>
+              <td align="left"><i>Governor</i></td>
+               <td align="left"><i>Notes</i></td>
+            </tr>
+            
+            <tr>
+               <td align="left">Sicilia*</td><!-- Province -->
+               <td align="center">2/0</td><!-- Base -->
+               <td align="center">0</td><!-- Arm -->
+               <td align="center">0</td><!-- Fle -->
+               <td align="center">10/5</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6+4</td><!-- Personal Income -->
+              <td align="center">1d6+2</td><!-- State Income -->
+               <td align="center">40t</td><!-- Tax -->
+              <td align="center">Sicilian Slave Revolt</td><!-- Defends -->
+               <td align="center">1</td><!-- Term -->
+               <td align="left">Terentius of Parma</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+            
+            <tr>
+               <td align="left">Sardinia et Corsica*</td><!-- Province -->
+               <td align="center">1/0</td><!-- Base -->
+               <td align="center">0</td><!-- Arm -->
+               <td align="center">2</td><!-- Fle -->
+               <td align="center">0/5</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6-1</td><!-- Personal Income -->
+              <td align="center">-1d6+1</td><!-- State Income -->
+               <td align="center">10t</td><!-- Tax -->
+              <td align="center">Cilician Pirates</td><!-- Defends -->
+               <td align="center">1</td><!-- Term -->
+               <td align="left">P. Popillius Laenas of Porta</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+         
+            <tr>
+               <td align="left"><u>Hispania Citerior*</u></td><!-- Province -->
+               <td align="center">2/0</td><!-- Base -->
+               <td align="center">0</td><!-- Arm -->
+               <td align="center">0</td><!-- Fle -->
+               <td align="center">10/0</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6+2</td><!-- Personal Income -->
+              <td align="center">1d6+1</td><!-- State Income -->
+               <td align="center">15t</td><!-- Tax -->
+              <td align="center">Lusitanian War, Numantine War, Sertorian Revolt</td><!-- Defends -->
+               <td align="center">1</td><!-- Term -->
+               <td align="left">Julius of Porta</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+            
+            <tr>
+               <td align="left"><u>Hispania Ulterior*</u></td><!-- Province -->
+               <td align="center">4/0</td><!-- Base -->
+               <td align="center">6</td><!-- Arm -->
+               <td align="center">0</td><!-- Fle -->
+               <td align="center">10/0</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6+1</td><!-- Personal Income -->
+              <td align="center">1d6-1</td><!-- State Income -->
+               <td align="center">20t</td><!-- Tax -->
+              <td align="center">Lusitanian War, Sertorian Revolt</td><!-- Defends -->
+               <td align="center">-</td><!-- Term -->
+               <td align="left">-</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+            
+            <tr>
+               <td align="left"><u>Africa</u></td><!-- Province -->
+               <td align="center">3/5</td><!-- Base -->
+               <td align="center">1</td><!-- Arm -->
+               <td align="center">1</td><!-- Fle -->
+               <td align="center">5/3</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6-1</td><!-- Personal Income -->
+              <td align="center">2d6-4</td><!-- State Income -->
+               <td align="center">20t</td><!-- Tax -->
+              <td align="center">Jugurthine War</td><!-- Defends -->
+               <td align="center">1</td><!-- Term -->
+               <td align="left">Junius of Corona</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+            
+            <tr>
+               <td align="left"><u>Gallia Narbonesis</u></td><!-- Province -->
+               <td align="center">1/0</td><!-- Base -->
+               <td align="center">0</td><!-- Arm -->
+               <td align="center">0</td><!-- Fle -->
+               <td align="center">5/0</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6-3</td><!-- Personal Income -->
+              <td align="center">1d6-3</td><!-- State Income -->
+               <td align="center">10t</td><!-- Tax -->
+              <td align="center">All Gallic Wars and 2nd Punic War</td><!-- Defends -->
+               <td align="center">-</td><!-- Term -->
+               <td align="left">-</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+            
+            <tr>
+               <td align="left"><u>Gallia Cisalpina</u></td><!-- Province -->
+               <td align="center">1/0</td><!-- Base -->
+               <td align="center">0</td><!-- Arm -->
+               <td align="center">0</td><!-- Fle -->
+               <td align="center">5/0</td><!-- Max -->
+               <td align="center">0</td><!-- Gar -->
+              <td align="center">1d6-1</td><!-- Personal Income -->
+              <td align="center">1d6-1</td><!-- State Income -->
+               <td align="center">15t</td><!-- Tax -->
+              <td align="center">All Gallic Wars, Germanic Migrations, and 2nd Punic War</td><!-- Defends -->
+               <td align="center">-</td><!-- Term -->
+               <td align="left">-</td><!-- Governor -->
+              <td align="left"></td><!-- Notes -->
+            </tr>
+         </table>
+         
+         <br/>
+         (*=Improved, <u>underlined</u>=Subject to Barbarian Raids)<br/> 
+
+   </div>
+  </section>
+
+
+
+<!-- Footer -->
+
+ <footer id="footer">
+
+  <p>© Copyright 2021 Patres Conscripti</p>
+  <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
+
+</footer>
+
+
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts -->
+   <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>

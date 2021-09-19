@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Patres Conscripti</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+      <!-- Back to top button -->
+  <button onclick="topFunction()" id="btn-back-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="title">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">patres conscripti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+            <!--
+              <li class="nav-item">
+                  <a class="nav-link" href="#games">Games</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#resources">Resources</a>
+              </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+
+  </section>
+
+
+  <!-- -------------- -->
+  <!-- Header Section -->
+  <!-- -------------- -->
+  <section id="top" class="inner-page">
+   <div class="container-fluid suppress-padding-bottom">
+
+     <div class="row">
+       <div class="col-lg-6">
+        <h1 class="big-heading">Game Equites</h1>
+       </div>
+
+       <div class="col-lg-6">
+
+         <div class="pt-4">
+           <a href="game-equites.html" class="btn btn-outline-danger mr-3" role="button">Equites Home</a>
+           <a href="game-equites-state.html" class="btn btn-outline-danger mr-3" role="button">State of the Republic</a>
+           <a href="game-equites-factions.html" class="btn btn-outline-danger mr-3" role="button">Factions</a>
+         </div>
+
+       </div>
+     </div>
+
+    </div>
+ </section>
+
+
+  <!-- -------------------- -->
+  <!-- Turn History Section -->
+  <!-- -------------------- -->
+  <section id="turnhistory" class="inner-section">
+   <div class="container-fluid suppress-padding-top">
+
+      <h3>Turn History</h3>
+      <a name="mortality"></a>
+      <h5 class="pbem-h5"><b><u><font color="maroon">I. Mortality Phase</font></u></b></h5>
+      The imminent 2nd Illyrian War becomes active.<br/>
+      <br/>
+      Draw 2...<br/>
+      Draw #15: <b>Sulpicius of Luna dies!</b>  Talents, Prior Consul and Knight markers are removed.  Sulpicius card moved to Curia.<br/>
+      Draw #14: <b>Aelius of Aquila dies!</b>  Priest marker is removed.  Aelius card moved to Curia.<br/>
+       
+      
+      <a name="revenue"></a>
+      <h5 class="pbem-h5"><b><u><font color="maroon">II. Revenue Phase</font></u></b></h5>
+      Pontifex Maximus Temple Donations: dr=6<br/>
+      <br/>
+      
+      <!--
+      <b>Provincial Improvements</b><br/>
+      <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td>Sicilia:</td>
+            <td>dr=? + 1 (Not corrupt), <b>Improved!</b>  Calpurnius gains +3 influence.</td>
+         </tr>
+         <tr>
+            <td>Sardinia et Corsica:</td>
+            <td>dr=? + 1 (Not corrupt), <b>Improved!</b> Junius gains +3 influence.</td>
+         </tr>
+      </table>
+      <br/>
+      -->
+      
+      <b>Faction Income</b><br/>
+      <I>(Existing Visible Monies + Senator Income + Provincial Income + Knights + Concessions + Other = New Visible Total)</I><br/>
+      <table border="0" cellspacing="0" cellpadding="0">
+            <td>Corona:</td>
+            <td>&nbsp</td>
+            <td>15 + 5 + 0 + 2 + 2 + 0 = 24t</td>
+         </tr>
+         <tr>
+            <td>Parma:</td>
+            <td>&nbsp</td>
+            <td>5 + 4 + 0 + 2 + 4 + 0 = 15t</td>
+         </tr>
+         <tr>
+            <td>Manus:</td>
+            <td>&nbsp</td>
+            <td>10 + 5 + 0 + 0 + 9 + 0 = 24t</td>
+         </tr>
+         <tr>
+            <td>Luna:</td>
+            <td>&nbsp</td>
+            <td>3 + 6 + 0 + 0 + 0 + 0 = 9t</td>
+         </tr>
+         <tr>
+            <td>Aquila:</td>
+            <td>&nbsp</td>
+            <td>3 + 5 + 0 + 3 + 5 + 6 (PM temple donations) = 22t</td>
+         </tr>
+      
+      </table>
+      <br/>
+      <b>State Income</b><br/>
+      <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td>Current Treasury:</td>
+            <td>116t</td>
+         </tr>
+         <tr>
+            <td>Annual Revenue:</td>
+            <td>+100t</td>
+         </tr>
+         <tr>
+            <td>Provincial Income:</td>
+            <td>+7t</td>
+         </tr>
+         <tr>
+            <td>&nbsp;&nbsp;&nbsp;Sicilia: dr=5 + 2 = 7t</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>&nbsp;&nbsp;&nbsp;Sardinia et Corsica: -dr=-1 + 1 = 0t</td>
+            <td></td>
+         </tr>
+      
+         <tr>
+            <td>Force Maintenance:</td>
+            <td>-52t (14 legions, 12 fleets)</td>
+         </tr>
+         <tr>
+            <td>Active Wars:</td>
+            <td>-60t (1st Macedonian War, 1st Illyrian War, 2nd Punic War)</td>
+         </tr>
+      
+         <tr>
+            <td>Land Bills:</td>
+            <td>-10t (Type III)</td>
+         </tr>
+      
+         <tr>
+            <td>Contributions:</td>
+            <td>0t</td>
+         </tr>
+         <tr>
+            <td>New State Treasury:</td>
+            <td>116 + 100 + 7 - 52 - 60 - 10 + 0 = <b>101t</b></td>
+         </tr>
+      </table>
+      
+      <br/>
+      <b>Provincial Unit Builds</b><br/>
+      <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td>Sicilia:</td>
+            <td>Calpurnius raises 2 provincial armies and 2 provincial fleets</td>
+         </tr>
+         <tr>
+            <td>Sardinia et Corsica:</td>
+            <td>Junius raises 1 provincial fleet</td>
+         </tr>
+      </table>
+      <br/>
+      <b>Governor Terms</b><br/>
+      <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td>Sicilia:</td>
+            <td>Calpurnius of Parma completes term 3 and returns to Rome, <b>Corrupt!</b></td>
+         </tr>
+         <tr>
+            <td>Sardinia et Corsica:</td>
+            <td>Junius of Corona completes term 3 and returns to Rome, <b>Corrupt!</b></td>
+         </tr>
+       
+      </table>
+      
+      
+      <a name="forum"></a>
+      <h5 class="pbem-h5"><b><u><font color="maroon">III. Forum Phase</font></u></b></h5>
+      
+      <!--Initiative Roll DR=?: Draws <b>Syrian War!</b> War card is placed in Active Wars.<br/>-->
+      <!--Initiative Roll DR=9: Draws a <b><font color="red">red card</font></b>.<br/>-->
+      
+      No Recruitment event is discarded.<br/>
+      <br/>
+      
+      <b>1st Initiative</b> - Faction of Parma<br/>
+      Initiative Roll DR=7: Random event: TDR=11; <b>Storm at Sea!</b>; DR=11; <b>11 fleets are destroyed!</b><br/>
+      Claudius spends 0t to attract a Knight; dr=6 + 0 = 6; <b>Success!</b><br/>
+      <br/>
+      
+      <b>2nd Initiative</b> - Faction of Manus<br/>
+      Initiative Roll DR=9: Draws a <b><font color="red">red card</font></b>.<br/>
+      Aemilius spends 0t to attract a Knight; dr=6 + 0 = 6; <b>Success!</b><br/>
+      <br/>
+      
+      <b>3rd Initiative</b> - Faction of Luna<br/>
+      Initiative Roll DR=3: Draws <b>1st Gallic War!</b> War card is placed in Active Wars.<br/>
+      Valerius spends 0t to attract a Knight; dr=6 + 0 = 6; <b>Success!</b><br/>
+      <br/>
+      
+      <b>4th Initiative</b> - Faction of Aquila<br/>
+      Initiative Roll DR=8: Draws a <b><font color="red">red card</font></b>.<br/>
+      Fulvius attempts to persuade unaligned senator Julius.<br/>
+      Base = 2 Oratory + 26 Influence + 0 Bribes - 9 Loyalty = 19<br/>
+      Counter-bribes: -0 Corona, -0 Parma, -0 Manus -0, Luna -0, Aquila +0<br/>
+      New Base = 9; DR=5; <b>Success!</b><br/>
+      Julius joins the Faction of Aquila.<br/>
+      Fulvius spends 0t to attract a Knight; dr=2 + 0 = 2; Fails.<br/>
+      <br/>
+      
+      <b>5th Initiative</b> - Faction of Corona<br/>
+      Initiative Roll DR=8: Draws a <b><font color="red">red card</font></b>.<br/>
+      Flaminius spends 1t to attract a Knight; dr=3 + 1 = 4; Fails.<br/>
+      <br/>
+      
+      <b>6th Initiative</b> - Faction of Aquila<br/>
+      Bids: Parma 0, Manus 0, Luna 2t, Aquila 3t, Corona 1t<br/>
+      Fulvius of Aquila spends 3t on the 6th initiative.<br/>
+      Initiative Roll DR=3: Draws a <b><font color="red">red card</font></b>.<br/>
+      Fulvius spends 0t to attract a Knight; dr=4 + 0 = 4; Fails.<br/>
+      <br/>
+      
+      <b>Curia Rolls</b><br/>
+      2nd Punic War Tax Farmer destruction: dr=2; Tax Farmer 2 is destroyed.  Card is moved to Curia.<br/>
+      Hannibal Tax Farmer destruction: dr=5; No effect.<br/>
+      Terentius: dr=3; Remains in Curia.<br/>
+      Plautius: dr=5; Moved to Forum.<br/>
+      Sulpicius: dr=1; Remains in Curia.<br/>
+      Aelius: dr=1; Remains in Curia.<br/>
+      Tax Farmer 2: dr=2; Remains in Curia.<br/>
+      
+      <br/>
+      <b>Other Business</b> <br/>
+      Manlius of Manus receives a prior consul marker.<br/>
+      Claudius of Parma receives a prior consul marker.<br/>
+      T. Quinctius Flamininus of Manus receives a prior consul marker.<br/>
+      
+      
+      <a name="population"></a>
+      <h5 class="pbem-h5"><b><u><font color="maroon">IV. Population Phase</font></u></b></h5>
+      HRAO is Claudius of Parma.<br/>
+      Unrest Level is increased by 2 due to unprosecuted wars (1st Macedonian War, 1st Illyrian War).<br/>
+      Unrest Level is increased by 1 due to Drought (1st Illyrian War).<br/>
+      <br/>
+      <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td>Current Unrest Level:</td>
+            <td>15</td>
+         </tr>
+         <tr>
+            <td>HRAO Popularity:</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>Population Roll:</td>
+            <td>TDR=12</td>
+         </tr>
+         <tr>
+            <td><b>New Unrest Level:</b></td>
+            <td>-15 + 2 + 12 = -1; <b><font style="color:red;">People Revolt; all players lose!!!</font></b></td>
+         </tr>
+      </table>
+      
+      <!--
+      <br/>
+      <b>Senators Killed by the Mob</b><br/>
+      #1 Cornelius of Luna - Talents are removed<br/>
+      #17 Plautius of Aquila - Priest and Knight markers are removed.  Senator card is placed in Curia.<br/>
+      -->
+      
+      <a name="senate"></a>
+      <h5 class="pbem-h5"><b><u><font color="maroon">V. Senate Phase</font></u></b></h5>
+      <b>Consular Elections</b><br/>
+      Claudius nominates ??? of ??? and ??? of ???.<br/>
+      Votes: <br/>
+      Result: ??; <br/>
+      <br/>
+      
+      <b>Pontifex Maximus Election</b><br/>
+      None.<br/>
+      <br/>
+      
+      <b>Censor Election</b><br/>
+      <br/>
+      <br/>
+      
+      <b>Governor Elections</b><br/>
+      <br/>
+      <br/>
+      
+      <b>Open Session</b><br/>
+      <br/>
+      
+      <a name="combat"></a>
+      <h5><b><u><font color="maroon">VI. Combat Phase</font></u></b></h5>
+      <br/>
+      
+      
+      <a name="revolution"></a>
+      <h5 class="pbem-h5"><b><u><font color="maroon">VII. Revolution Phase</font></u></b></h5>
+      
+      <b>Faction of Parma Actions</b><br/>
+      <br/>
+      <br/>
+      
+      <b>Faction of Manus Actions</b><br/>
+      <br/>
+      <br/>
+      
+      <b>Faction of Luna Actions</b><br/>
+      <br/>
+      <br/>
+      
+      <b>Faction of Aquila Actions</b><br/>
+      <br/>
+      <br/>
+      
+      <b>Faction of Corona Actions</b><br/>
+      <br/>
+      <br/>
+
+    </div>
+  </section>
+
+
+
+<!-- Footer -->
+
+ <footer id="footer">
+
+  <p>© Copyright 2021 Patres Conscripti</p>
+  <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
+
+</footer>
+
+
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts -->
+   <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>

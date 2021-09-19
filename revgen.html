@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Patres Conscripti</title>
+  
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  
+	 <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+
+
+<!--
+	<title>Revenue Generator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+-->
+
+    <!-- jQuery -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+	<!-- Bootstrap -->
+<!--
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+-->
+
+</head>
+
+<body>
+
+  <!-- ------------------ -->
+  <!-- Back to top button -->
+  <!-- ------------------ -->
+  <button onclick="topFunction()" id="btn-back-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="title">
+
+      <!-- ------- -->
+      <!-- Nav Bar -->
+      <!-- ------- -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">patres conscripti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+          </ul>
+        </div>
+      </nav>
+
+  </section>
+
+	<div class="container mt-3">
+		<h1 class="big-heading">Revenue Generator</h1>
+
+		<form id="revgenform">
+			<p>
+			This application will significantly streamline the Revenue Phase of your Republic of Rome games. 
+			Fill out the form below and click one of the Generate Revenue buttons. This will display the revenue 
+			that's generated for the State and each Faction.
+			</p>
+			<p>
+			Faction revenue is in the form of a "lump sum" rather than assigned to individual Senators. All 
+			revenue generated is to be added to what is already in play.
+			</p>
+			<p>
+			Most game situations are handled by this application. This includes legion & fleet maintenance, 
+			land bills, active wars, concessions, graft from Aegyptian and Sicilian Grain (due to droughts), provincial improvement, 
+			provincial spoils, provincial taxes, negative provincial spoils applied to the State rather than 
+			Faction, Pontifex Maximus's temple donations, and Provincial Wars.  Select the "No Revenue" option for
+			scenarios when a province's normal revenue does not occur (e.g. Barbarian Raids, Internal Disorder, and
+			wars attacking provinces).
+			</p>
+			<p>
+			Clicking the Save Game button will download a file with the game's data.  Reload previously saved 
+			game files via the Load Game button.
+			</p>
+
+			<div class="card mb-2 pb-2">
+				<div class="card-header display-6 text-yellow">State</div>
+				<div class="card-body">
+					
+					<table width="100%" border="0">
+						<tr>
+							<td valign="top" width="15%">
+
+								<div class="container">
+									<div class="row text-center">
+										<div class="col text-center font-weight-bold font-plain mb-1">
+											Active Forces
+										</div>
+									</div>
+								
+									<div class="row text-center">
+										
+										<div class="col text-right" style="padding-right:0px;">
+											<div class="mb-1">Legions</div>
+											<div>Fleets</div>
+										</div>
+										
+										<div class="col text-left">
+											<div class="mb-1">
+												<select id="numlegions" name="numlegions">
+													<option value="00">0</option>
+													<option value="01">1</option>
+													<option value="02">2</option>
+													<option value="03">3</option>
+													<option value="04">4</option>
+													<option value="05">5</option>
+													<option value="06">6</option>
+													<option value="07">7</option>
+													<option value="08">8</option>
+													<option value="09">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+												</select>
+											</div>
+											<div>
+												<select id="numfleets" name="numfleets">
+													<option value="00">0</option>
+													<option value="01">1</option>
+													<option value="02">2</option>
+													<option value="03">3</option>
+													<option value="04">4</option>
+													<option value="05">5</option>
+													<option value="06">6</option>
+													<option value="07">7</option>
+													<option value="08">8</option>
+													<option value="09">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+												</select>
+											</div>
+										</div>
+									<div>
+								</div>
+													
+							</td>
+							<td valign="top" width="15%" style="border-left: 1px solid #ddd;">
+							
+								<div class="container">
+									<div class="row text-center">
+										<div class="col text-center font-weight-bold font-plain mb-1">
+											Land Bills
+										</div>
+									</div>
+									<div class="row text-center">
+										
+										<div class="col text-right" style="padding-right:0px;">
+											<div class="mb-1">Type I</div>
+											<div class="mb-1">Type II</div>
+											<div>Type III</div>
+										</div>
+										<div class="col text-left">
+											<div class="mb-1">
+												<select id="lbtype1" name="lbtype1">
+													<option value="00">0</option>
+													<option value="01">1</option>
+												</select>
+											</div>
+											<div class="mb-1">
+												<select id="lbtype2" name="lbtype2">
+													<option value="00">0</option>
+													<option value="01">1</option>
+													<option value="02">2</option>
+												</select>
+											</div>
+											<div>
+												<select id="lbtype3" name="lbtype3">
+													<option value="00">0</option>
+													<option value="01">1</option>
+													<option value="02">2</option>
+													<option value="03">3</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</td>
+							<td valign="top" width="33%" style="border-left: 1px solid #ddd;">
+							
+								<div class="container">
+									<div class="row text-center">
+										<div class="col text-center font-weight-bold font-plain mb-1">
+											Other
+										</div>
+									</div>
+								
+									<div class="row text-center">
+										<div class="col text-right" style="padding-right:0px;">
+											<div class="mb-1">Active Wars</div>
+											<div class="mb-1">Drought Level</div>
+											<div id="pontifexmaximuslabel" class="mb-1" style="display:none;">Pontifex Maximus</div>
+										</div>
+										<div class="col text-left">
+											<div class="mb-1">
+												<select id="numactwars" name="numactwars">
+													<option value="00">0</option>
+													<option value="01">1</option>
+													<option value="02">2</option>
+													<option value="03">3</option>
+													<option value="04">4</option>
+													<option value="05">5</option>
+													<option value="06">6</option>
+													<option value="07">7</option>
+													<option value="08">8</option>
+													<option value="09">9</option>
+												</select>
+											</div>
+											<div class="mb-1">
+												<select id="droughtlevel" name="droughtlevel"">
+													<option value="00">0</option>
+													<option value="01">1</option>
+													<option value="02">2</option>
+													<option value="03">3</option>
+													<option value="04">4</option>
+													<option value="05">5</option>
+													<option value="06">6</option>
+													<option value="07">7</option>
+													<option value="08">8</option>
+													<option value="09">9</option>
+												</select>
+											</div>
+											<div>
+												<select id="pontifexmaximus" name="pontifexmaximus" style="display:none;">
+													<option value=""></option>
+													<option value="A">Aquila / Eagle</option>
+													<option value="B">Corona / Wreath</option>
+													<option value="C">Luna / Moon</option>
+													<option value="D">Manus / Hand</option>
+													<option value="E">Parma / Shield</option>
+													<option value="F">Solis / Sun</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							</td>
+							
+							<td valign="top" width="22%" style="border-left: 1px solid #ddd;">
+							
+								<div class="container">
+									<div class="row text-center">
+										<div class="col font-weight-bold font-plain">
+											Advanced Rules
+										</div>
+									</div>
+								
+									<div class="row text-center">
+										<div class="col">
+											<label style="margin-bottom:0px;" ><input class="mr-1" type="checkbox" id="rule201" name="rule201" /> 2.01 Pontifex Maximus</label>
+											<label style="margin-bottom:0px;" ><input class="mr-1" type="checkbox" id="rule202" name="rule202" /> 2.02 Provincial Wars</label>
+										</div>
+									</div>
+								</div>
+								
+							</td>
+							
+							<td valign="top" width="15%" style="border-left: 1px solid #ddd;">
+							
+								<div class="container">
+									<div class="row text-center">
+										<div class="col font-weight-bold font-plain">
+											Events
+										</div>
+									</div>
+								
+									<div class="row text-center">
+										<div class="col">
+											<label style="margin-bottom:0px;" ><input class="mr-1" type="checkbox" id="evilomens" name="evilomens" /> Evil Omens</label>
+										</div>
+									</div>
+								</div>
+								
+							</td>
+						</tr>
+					</table>
+				
+				</div>
+			</div>
+			
+			<div class="card mb-2 pb-2">
+				<div class="card-header display-6 text-yellow">Factions</div>
+				<div class="card-body">
+					<table width="100%">
+						<tr>
+							<td>
+							
+								<table width="100%">
+									<tr>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Active</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Name</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Senators</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Knights</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Leader<br/>Assigned</th>
+									</tr>				
+									<tr>
+										<td class="text-center"><input type="checkbox" id="factionactiveA" name="factionactiveA"/></td>
+										<td class="text-left"><input type="text" class="form-control" id="factionnameA" name="factionnameA" value="Aquila / Eagle" disabled /></td>
+										<td class="text-center"><select id="numsenatorsA" name="numsenatorsA"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><select id="numknightsA" name="numknightsA"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><input type="checkbox" id="factionleaderA" name="factionleaderA" /></td>
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox" id="factionactiveB" name="factionactiveB"/></td>
+										<td class="text-left"><input type="text" class="form-control" id="factionnameB" name="factionnameB" value="Corona / Wreath" disabled /></td>
+										<td class="text-center"><select id="numsenatorsB" name="numsenatorsB"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><select id="numknightsB" name="numknightsB"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><input type="checkbox" id="factionleaderB" name="factionleaderB" /></td>		
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox" id="factionactiveC" name="factionactiveC"/></td>
+										<td class="text-left"><input type="text" class="form-control" id="factionnameC" name="factionnameC" value="Luna / Moon" disabled /></td>
+										<td class="text-center"><select id="numsenatorsC" name="numsenatorsC"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><select id="numknightsC" name="numknightsC"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><input type="checkbox" id="factionleaderC" name="factionleaderC" /></td>			
+									</tr>				
+								</table>
+							</td>
+							
+							<td><div style="width:25px;"></div></td>
+							<td style="border-left: 1px solid #ddd;"><div style="width:25px;"></div></td>						
+							
+							<td>
+								<table width="100%">
+									<tr>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Active</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Name</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Senators</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Knights</th>
+										<th valign="bottom" class="text-center font-weight-bold font-plain">Leader<br/>Assigned</th>
+									</tr>				
+									<tr>
+										<td class="text-center"><input type="checkbox" id="factionactiveD" name="factionactiveD"/></td>
+										<td class="text-left"><input type="text" class="form-control" id="factionnameD" name="factionnameD" value="Manus / Hand" disabled /></td>
+										<td class="text-center"><select id="numsenatorsD" name="numsenatorsD"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><select id="numknightsD" name="numknightsD"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><input type="checkbox" id="factionleaderD" name="factionleaderD" /></td>
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox" id="factionactiveE" name="factionactiveE"/></td>
+										<td class="text-left"><input type="text" class="form-control" id="factionnameE" name="factionnameE" value="Parma / Shield" disabled /></td>
+										<td class="text-center"><select id="numsenatorsE" name="numsenatorsE"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><select id="numknightsE" name="numknightsE"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><input type="checkbox" id="factionleaderE" name="factionleaderE" /></td>	
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox" id="factionactiveF" name="factionactiveF"/></td>
+										<td class="text-left"><input type="text" class="form-control" id="factionnameF" name="factionnameF" value="Solis / Sun" disabled /></td>
+										<td class="text-center"><select id="numsenatorsF" name="numsenatorsF"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><select id="numknightsF" name="numknightsF"><option value="00">0</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></td>
+										<td class="text-center"><input type="checkbox" id="factionleaderF" name="factionleaderF" /></td>	
+									</tr>				
+								</table>
+							</td>
+						</tr>				
+					</table>
+					
+				</div>
+			</div>	
+
+			<table width="100%">
+				<tr>
+					<td valign="top">
+						<div class="card mr-2 pb-2">
+							<div class="card-header display-6 text-yellow">Concessions</div>
+							<div class="card-body">
+								<!-- Concessions Table -->
+								<table width="100%">
+									<tr>
+										<th class="font-weight-bold font-plain">Name</th>
+										<th class="font-weight-bold font-plain">Owner's Faction</th>
+										<th></th>
+									</tr>
+									<tr>
+										<td>Tax Farmer #1</td>
+										<td><select id="conctf1" name="conctf1"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Tax Farmer #2</td>
+										<td><select id="conctf2" name="conctf2"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Tax Farmer #3</td>
+										<td><select id="conctf3" name="conctf3"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Tax Farmer #4</td>
+										<td><select id="conctf4" name="conctf4"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Tax Farmer #5</td>
+										<td><select id="conctf5" name="conctf5"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Tax Farmer #6</td>
+										<td><select id="conctf6" name="conctf6"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Harbor Fees</td>
+										<td><select id="conchf"  name="conchf" ><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Mining</td>
+										<td><select id="concmin" name="concmin"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Land Commissioner</td>
+										<td><select id="conclc"  name="conclc" ><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Aegyptian Grain</td>
+										<td><select id="concaeg" name="concaeg" ><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td><label style="margin-bottom:0px;"><input type="checkbox" class="mt-1 mr-1" id="droughtaeg" name="droughtaeg" value="droughtaeg" />Drought Graft</label></td>
+									</tr>
+									<tr>
+										<td>Sicilian Grain</td>
+										<td><select id="concscg"  name="concscg" ><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option></select></td>
+										<td><label style="margin-bottom:0px;"><input type="checkbox" class="mr-1" id="droughtscg" name="droughtscg" value="droughtaeg" />Drought Graft</label></td>
+									</tr>	
+								</table>	
+							</div>
+						</div>
+					</td>
+			
+					<td valign="top">
+						<div class="card pb-2">
+							<div class="card-header display-6 text-yellow">Provinces</div>
+							<div class="card-body">
+							
+								<!-- Provinces Table -->
+								<table width="100%">
+									<tr>
+										<th class="font-weight-bold font-plain">Name</th>
+										<th class="font-weight-bold font-plain">Governor's Faction</th>
+										<th class="font-weight-bold font-plain">Taking Spoils</th>
+										<th class="font-weight-bold font-plain">Improved</th>
+									</tr>							
+									<tr>
+										<td>Aegyptus</td>
+										<td><select id="provaeg" name="provaeg"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provaeg_spoils"   name="provaeg_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provaeg_improved" name="provaeg_improved" checked="checked" disabled/></label></td>
+									</tr>
+									<tr>
+										<td>Africa</td>
+										<td><select id="provafr" name="provafr"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provafr_spoils"   name="provafr_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provafr_improved" name="provafr_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Asia</td>
+										<td><select id="provasi" name="provasi"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provasi_spoils"   name="provasi_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provasi_improved" name="provasi_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Bithynia</td>
+										<td><select id="provbit" name="provbit"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provbit_spoils"   name="provbit_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provbit_improved" name="provbit_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Cilicia et Cyprus</td>
+										<td><select id="provcec" name="provcec"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provcec_spoils"   name="provcec_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provcec_improved" name="provcec_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Creta et Cyrenaica</td>
+										<td><select id="provcrc" name="provcrc"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provcrc_spoils"   name="provcrc_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provcrc_improved" name="provcrc_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Gallia Cisalpina</td>
+										<td><select id="provgci" name="provgci"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provgci_spoils"   name="provgci_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provgci_improved" name="provgci_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Gallia Narbonensis</td>
+										<td><select id="provgna" name="provgna"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provgna_spoils"   name="provgna_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provgna_improved" name="provgna_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Gallia Transalpina</td>
+										<td><select id="provgtr" name="provgtr"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provgtr_spoils"   name="provgtr_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provgtr_improved" name="provgtr_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Hispania Citerior</td>
+										<td><select id="provhci" name="provhci"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provhci_spoils"   name="provhci_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provhci_improved" name="provhci_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Hispania Ulterior</td>
+										<td><select id="provhul" name="provhul"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provhul_spoils"   name="provhul_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provhul_improved" name="provhul_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Illyricum</td>
+										<td><select id="provill" name="provill"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provill_spoils"   name="provill_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provill_improved" name="provill_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Macedonia</td>
+										<td><select id="provmac" name="provmac"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provmac_spoils"   name="provmac_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provmac_improved" name="provmac_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Sardinia et Corsica</td>
+										<td><select id="provsec" name="provsec"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provsec_spoils"   name="provsec_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provsec_improved" name="provsec_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Sicilia</td>
+										<td><select id="provsic" name="provsic"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provsic_spoils"   name="provsic_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provsic_improved" name="provsic_improved" /></label></td>
+									</tr>
+									<tr>
+										<td>Syria</td>
+										<td><select id="provsyr" name="provsyr"><option value=""></option><option value="A">Aquila / Eagle</option><option value="B">Corona / Wreath</option><option value="C">Luna / Moon</option><option value="D">Manus / Hand</option><option value="E">Parma / Shield</option><option value="F">Solis / Sun</option><option value="X">No Revenue</option></select></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provsyr_spoils"   name="provsyr_spoils"   /></label></td>
+										<td class="text-center"><label style="margin-bottom:0px;"><input type="checkbox" class="mr-2" id="provsyr_improved" name="provsyr_improved" /></label></td>
+									</tr>	
+								</table>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<!--
+		<div class="container mt-3 mb-3">
+			<div class="row text-center">
+				<div class="col text-left">
+					<button id="savegame" name="savegame" class="btn btn-danger mr-2" type="submit">Save Game</button>  
+				</div>
+				<div class="col text-right">
+					<button id="genrev" name="genrev" class="btn btn-danger mr-2" type="submit">Generate Revenue</button>  
+					<button id="genrevdetails" name="genrevdetails" class="btn btn-danger" type="submit">Generate Revenue with Details</button>
+				</div>
+			</div>
+		</div>
+	-->
+			
+		</form>
+
+		<!--
+		<span class="custom-file" id="customFile" lang="es">
+			<input type="file" name="files[]" id="fileUpload" class="custom-file-input">
+			<label class="custom-file-label" for="exampleInputFile">
+				Select file...
+			</label>
+		</span>
+		-->
+
+		<!-- <input id="myInput" type="file" style="visibility:hidden" /> -->
+		<!-- <input type="button" value="Show Dialog" onclick="$('#myInput').click();" /> -->
+		<input type="file" name="files[]" id="fileUpload" style="visibility:hidden" >
+		<!--<input type="button" value="Load Game" onclick="$('#fileUpload').click();" />-->
+
+		<div class="container mt-3 mb-3">
+			<div class="row text-center">
+				<div class="col text-left">
+					<button id="savegame" name="savegame" class="btn btn-danger mr-2" type="submit">Save Game</button>  
+					<!--<button id="loadgame" name="loadgame" class="btn btn-danger mr-2" onclick="$('#fileUpload').click();" >Load Game</button>-->
+					<button id="loadgame" name="loadgame" class="btn btn-danger mr-2" >Load Game</button>
+				</div>
+				<div class="col text-right">
+					<button id="genrev" name="genrev" class="btn btn-danger mr-2" type="submit">Generate Revenue</button>  
+					<button id="genrevdetails" name="genrevdetails" class="btn btn-danger" type="submit">Generate Revenue with Details</button>
+				</div>
+			</div>	
+		</div>
+
+		<!-- <textarea class="form-control mt-3 mb-3" id="output" name="output" placeholder="Revenue Output" ></textarea> -->
+
+	</div>
+
+	<!-- Trigger the modal with a button -->
+	<!-- <button type="button" class="btn btn-success openBtn">Open Modal</button> -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" name="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Generated Revenue</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+				</div>
+
+				<textarea class="modal-body-roll20" style="display: none;"> 
+				</textarea>
+
+				<div class="modal-footer">
+					<button id="copytoclipboard" type="button" class="btn btn-danger" data-dismiss="modal">Copy Roll20 Text to Clipboard</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  <!-- ------ -->
+  <!-- Footer -->
+  <!-- ------ -->
+  <footer id="footer">
+
+    <p>© Copyright 2021 Patres Conscripti</p>
+    <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
+
+  </footer>
+
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/revgen_scripts.js"></script>
+
+</body>
+</html>
+

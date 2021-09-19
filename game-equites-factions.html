@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Patres Conscripti</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+      <!-- Back to top button -->
+  <button onclick="topFunction()" id="btn-back-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="title">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">patres conscripti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+            <!--
+              <li class="nav-item">
+                  <a class="nav-link" href="#games">Games</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#resources">Resources</a>
+              </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+
+  </section>
+
+  
+  <!-- -------------- -->
+  <!-- Header Section -->
+  <!-- -------------- -->
+  <section id="top" class="inner-page">
+   <div class="container-fluid suppress-padding-bottom">
+
+     <div class="row">
+       <div class="col-lg-6">
+        <h1 class="big-heading">Game Equites</h1>
+       </div>
+
+       <div class="col-lg-6">
+
+         <div class="pt-4">
+           <a href="game-equites.html" class="btn btn-outline-danger mr-3" role="button">Equites Home</a>
+           <a href="game-equites-state.html" class="btn btn-outline-danger mr-3" role="button">State of the Republic</a>
+           <a href="game-equites-turnhistory.html" class="btn btn-outline-danger mr-3" role="button">Turn History</a>
+         </div>
+
+       </div>
+     </div>
+
+    </div>
+ </section>
+
+
+  <!-- ---------------- -->
+  <!-- Factions Section -->
+  <!-- ---------------- -->
+  <section id="factions" class="inner-section">
+   <div class="container-fluid suppress-padding-top">
+      
+      <h3>Factions</h3>
+      <style>
+        .priorconsul {background-color:green;color:white;}
+        .office {background-color:red;color:white;}
+        .knight {background-color:royalblue;color:white;}
+        .concession {background-color:sienna;color:white;}/* chocolate */
+        .money {background-color:gold;color:black;}
+        .corrupt {background-color:black;color:white;font-style:italic;}
+        .priest {background-color:mediumorchid;color:white;}
+        .veto {background-color:slategray;color:white;}
+        .leader {background-color:brown;color:white;}
+        .legion {background-color:plum;color:black;}
+        .absent {background-color:beige;color:black;}
+        
+        .used {text-decoration:line-through;}
+        
+        .pill {
+          border-radius:5px;
+          border:1px solid black;
+          display:inline-block;
+          cursor:normal;
+          font-size:12px;
+          padding:1px 5px;
+          margin: 1px 0px 1px 0px;
+        }
+        </style>
+        
+        
+        <!-- <a class="pill green">green</a> <a class="pill blue">blue</a> <a class="pill red">red</a> <a class="pill brown">brown</a> <a class="pill black">black</a> -->
+        <!-- <a class="pill corrupt">** Corrupt **</a> <a class="pill corrupt">** Major **</a> -->
+        
+        
+        <!-- Faction of Corona (Claudio) -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="20%" colspan="2"><b>Faction of Corona</b> (<i>Claudio</i>)</td>
+              <td width="3%" align="center"><i>Mil</i></td>
+              <td width="3%" align="center"><i>Ora</i></td>
+              <td width="3%" align="center"><i>Loy</i></td>
+              <td width="3%" align="center"><i>Inf</i></td>
+              <td width="3%" align="center"><i>Pop</i></td>
+            <td width="10%" align="center">Treasury: hidden</td>
+              <td width="10%" align="center">Influence: 33</td>
+              <td width="12%" align="center">Votes: 9  (<i>+1 btl infl</i>)</td>
+              <td width="8%" align="center">Cards: 4</td>
+           </tr>
+           <tr>
+              <td width="18%">#9 Aurelius</td>
+              <td width="2%" align="center"></td>                <!-- Faction Leader column     -->
+              <td align="center">2</td>  <!-- Military -->
+              <td align="center">3</td>  <!-- Oratory -->
+              <td align="center">7</td>  <!-- Loyalty -->
+              <td align="center">14</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">1t</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill priest">Priest</a> </td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#10 Junius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">1</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">8</td>  <!-- Loyalty -->
+              <td align="center">6</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">15t</a> <a class="pill knight">1 Knight</a> <a class="pill concession">Tax Farmer 4</a> <a class="pill corrupt">** Corrupt **</a> </td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#13 Flaminius</td>
+              <td width="2%" align="center"><a class="pill leader">Leader</a></td>                <!-- Faction Leader column -->
+              <td align="center">4</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">6</td>  <!-- Loyalty -->
+              <td align="center">13</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">8t</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill knight">1 Knight</a> </td> <!-- Notes -->
+           </tr>
+        </table>
+        
+        <br/>
+        
+        <!-- Faction of Parma (Gavin) -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="20%" colspan="2"><b>Faction of Parma</b> (<i>Gavin</i>)</td>
+              <td width="3%" align="center"><i>Mil</i></td>
+              <td width="3%" align="center"><i>Ora</i></td>
+              <td width="3%" align="center"><i>Loy</i></td>
+              <td width="3%" align="center"><i>Inf</i></td>
+              <td width="3%" align="center"><i>Pop</i></td>
+            <td width="10%" align="center">Treasury: hidden</td>
+              <td width="10%" align="center">Influence: 14</td>
+              <td width="12%" align="center">Votes: 8</td>
+              <td width="8%" align="center">Cards: 1</td>
+           </tr>
+           <tr>
+              <td width="18%">#5 Claudius</td>
+              <td width="2%" align="center"><a class="pill leader">Leader</a></td>                <!-- Faction Leader column -->
+              <td align="center">2</td>  <!-- Military -->
+              <td align="center">3</td>  <!-- Oratory -->
+              <td align="center">7</td>  <!-- Loyalty -->
+              <td align="center">9</td>  <!-- Influence -->
+              <td align="center">2</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">5t</a> <a class="pill office">Rome Consul</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill knight">2 Knight</a> <a class="pill corrupt">** Major **</a> </td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#16 Calpurnius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">1</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">9</td>  <!-- Loyalty -->
+              <td align="center">5</td>  <!-- Influence -->
+              <td align="center">2</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">10t</a> <a class="pill knight">1 Knight</a> <a class="pill concession">Tax Farmer 1</a> <a class="pill concession">Tax Farmer 3</a> <a class="pill corrupt">** Corrupt **</a> </td> <!-- Notes -->
+           </tr>
+        </table>
+        
+        <br/>
+        
+        <!-- Faction of Manus (Michael) -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="20%" colspan="2"><b>Faction of Manus</b></td>
+              <td width="3%" align="center"><i>Mil</i></td>
+              <td width="3%" align="center"><i>Ora</i></td>
+              <td width="3%" align="center"><i>Loy</i></td>
+              <td width="3%" align="center"><i>Inf</i></td>
+              <td width="3%" align="center"><i>Pop</i></td>
+            <td width="10%" align="center">Treasury: hidden</td>
+              <td width="10%" align="center">Influence: 32</td>
+              <td width="12%" align="center">Votes: 7/9</td>
+              <td width="8%" align="center">Cards: 3</td>
+           </tr>
+           <tr>
+              <td width="18%">#6 Manlius</td>
+              <td width="2%" align="center"></td>                <!-- Faction Leader column -->
+              <td align="center">3</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">7</td>  <!-- Loyalty -->
+              <td align="center">11</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">4t</a> <a class="pill office">Proconsul</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill concession">Tax Farmer 6</a> <a class="pill absent">Fighting 2nd Punic War</a> <a class="pill corrupt">** Major **</a></td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#18a T. Quinctius Flamininus</td>
+              <td width="2%" align="center"> </td>                <!-- Faction Leader column -->
+              <td align="center">5</td>  <!-- Military -->
+              <td align="center">4</td>  <!-- Oratory -->
+              <td align="center">7</td>  <!-- Loyalty -->
+              <td align="center">9</td>  <!-- Influence -->
+              <td align="center">-1</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">7t</a> <a class="pill office">Field Consul</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill concession">Mining</a> <a class="pill corrupt">** Major **</a></td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#19 Aemilius</td>
+              <td width="2%" align="center"><a class="pill leader">Leader</a></td>                <!-- Faction Leader column -->
+              <td align="center">4</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">8</td>  <!-- Loyalty -->
+              <td align="center">12</td>  <!-- Influence -->
+              <td align="center">3</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">13t</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill knight">1 Knight</a> <a class="pill concession">Sicilian Grain</a> <a class="pill corrupt">** Corrupt **</a></td> <!-- Notes -->
+           </tr>
+        </table>
+        
+        <br/>
+        
+        <!-- Faction of Luna (Florian) -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="20%" colspan="2"><b>Faction of Luna</b> (<i>Florian</i>)</td>
+              <td width="3%" align="center"><i>Mil</i></td>
+              <td width="3%" align="center"><i>Ora</i></td>
+              <td width="3%" align="center"><i>Loy</i></td>
+              <td width="3%" align="center"><i>Inf</i></td>
+              <td width="3%" align="center"><i>Pop</i></td>
+            <td width="10%" align="center">Treasury: hidden</td>
+              <td width="10%" align="center">Influence: 16</td>
+              <td width="12%" align="center">Votes: 11</td>
+              <td width="8%" align="center">Cards: 1</td>
+           </tr>
+           <tr>
+              <td width="18%">#1 Cornelius</td>
+              <td width="2%" align="center"><a class="pill leader">Leader</a></td>                <!-- Faction Leader column -->
+              <td align="center">4</td>  <!-- Military -->
+              <td align="center">3</td>  <!-- Oratory -->
+              <td align="center">9</td>  <!-- Loyalty -->
+              <td align="center">5</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">3t</a> </td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#8 Furius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">3</td>  <!-- Military -->
+              <td align="center">3</td>  <!-- Oratory -->
+              <td align="center">8</td>  <!-- Loyalty -->
+              <td align="center">3</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">2t</a> </td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#3 Valerius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">1</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">10</td>  <!-- Loyalty -->
+              <td align="center">5</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">2t</a> <a class="pill knight">1 Knight</a> </td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#2a Q. Fabius Maximus</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">5</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">7</td>  <!-- Loyalty -->
+              <td align="center">3</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">2t</a> </td> <!-- Notes -->
+           </tr>
+        </table>
+        
+        <br/>
+        
+        <!-- Faction of Aquila (Andrew) -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="20%" colspan="2"><b>Faction of Aquila</b> (<i>Andy</i>)</td>
+              <td width="3%" align="center"><i>Mil</i></td>
+              <td width="3%" align="center"><i>Ora</i></td>
+              <td width="3%" align="center"><i>Loy</i></td>
+              <td width="3%" align="center"><i>Inf</i></td>
+              <td width="3%" align="center"><i>Pop</i></td>
+            <td width="10%" align="center">Treasury: hidden</td>
+              <td width="10%" align="center">Influence: 47</td>
+              <td width="12%" align="center">Votes: 12 (<i>+4 btl infl</i>)</td>
+              <td width="8%" align="center">Cards: 5</td>
+           </tr>
+           <tr>
+              <td width="18%">#7 Fulvius</td>
+              <td width="2%" align="center"></td>                <!-- Faction Leader column -->
+              <td align="center">2</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">8</td>  <!-- Loyalty -->
+              <td align="center">26</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">2t</a> <a class="pill office">Censor</a> <a class="pill priorconsul">Prior Consul</a> <a class="pill priest">Priest</a> <a class="pill knight">1 Knight</a> <a class="pill corrupt">** Major **</a></td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#11 Papirius</td>
+              <td width="2%" align="center"><a class="pill leader">Leader</a></td>                <!-- Faction Leader column -->
+              <td align="center">1</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">6</td>  <!-- Loyalty -->
+              <td align="center">9</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill priorconsul">Prior Consul</a>  <a class="pill priest">Priest</a> <a class="pill knight">2 Knight</a> <a class="pill corrupt">** Corrupt **</a></td> <!-- Notes -->
+           </tr>
+           <tr>
+              <td width="18%">#12 Acilius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">2</td>  <!-- Military -->
+              <td align="center">2</td>  <!-- Oratory -->
+              <td align="center">7</td>  <!-- Loyalty -->
+              <td align="center">8</td>  <!-- Influence -->
+              <td align="center">1</td>  <!-- Popularity -->
+              <td colspan="4"><a class="pill money">17t</a> <a class="pill office">Pontifex Maximus</a> <a class="pill veto">Veto</a> <a class="pill concession">Harbor Fees</a> <a class="pill corrupt">** Major **</a></td> <!-- Notes -->
+           </tr>
+            <tr>
+              <td width="18%">#4 Julius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">4</td>  <!-- Military -->
+              <td align="center">3</td>  <!-- Oratory -->
+              <td align="center">9</td>  <!-- Loyalty -->
+              <td align="center">4</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"></td> <!-- Notes -->
+           </tr>   
+        </table>
+        
+        <br/>
+        
+        <!-- Unaligned Senators -->
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td width="20%" colspan="2"><b>Unaligned Senators</b></td>
+              <td width="3%" align="center"><i>Mil</i></td>
+              <td width="3%" align="center"><i>Ora</i></td>
+              <td width="3%" align="center"><i>Loy</i></td>
+              <td width="3%" align="center"><i>Inf</i></td>
+              <td width="3%" align="center"><i>Pop</i></td>
+            <td width="10%" align="center"></td>
+              <td width="10%" align="center"></td>
+              <td width="12%" align="center"></td>
+              <td width="8%" align="center"></td>
+           </tr>
+           <tr>
+              <td width="18%">#17 Plautius</td>
+              <td width="2%" align="center">  </td>                <!-- Faction Leader column -->
+              <td align="center">2</td>  <!-- Military -->
+              <td align="center">1</td>  <!-- Oratory -->
+              <td align="center">6</td>  <!-- Loyalty -->
+              <td align="center">2</td>  <!-- Influence -->
+              <td align="center">0</td>  <!-- Popularity -->
+              <td colspan="4"></td> <!-- Notes -->
+           </tr>
+           
+        </table>
+
+    </div>
+  </section>
+
+
+
+
+<!-- Footer -->
+
+ <footer id="footer">
+
+  <p>© Copyright 2021 Patres Conscripti</p>
+  <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
+
+</footer>
+
+
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts -->
+   <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>

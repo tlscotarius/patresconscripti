@@ -48,7 +48,7 @@
       <!-- ------- -->
       <!-- Nav Bar -->
       <!-- ------- -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <a class="navbar-brand" href="index.html">patres conscripti</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
 
   </section>
 
-	<div class="container mt-3">
+	<div class="container-fluid mt-3 suppress-padding-top">
 		<h1 class="big-heading">Revenue Generator</h1>
 
 		<form id="revgenform">
@@ -96,7 +96,7 @@
 					
 					<table width="100%" border="0">
 						<tr>
-							<td valign="top" width="15%">
+							<td valign="top" width="20%">
 
 								<div class="container">
 									<div class="row text-center">
@@ -178,7 +178,7 @@
 								</div>
 													
 							</td>
-							<td valign="top" width="15%" style="border-left: 1px solid #ddd;">
+							<td valign="top" width="20%" style="border-left: 1px solid #ddd;">
 							
 								<div class="container">
 									<div class="row text-center">
@@ -220,7 +220,7 @@
 								</div>
 
 							</td>
-							<td valign="top" width="33%" style="border-left: 1px solid #ddd;">
+							<td valign="top" width="30%" style="border-left: 1px solid #ddd;">
 							
 								<div class="container">
 									<div class="row text-center">
@@ -233,37 +233,53 @@
 										<div class="col text-right" style="padding-right:0px;">
 											<div class="mb-1">Active Wars</div>
 											<div class="mb-1">Drought Level</div>
+											<div class="mb-1">Evil Omens</div>
 											<div id="pontifexmaximuslabel" class="mb-1" style="display:none;">Pontifex Maximus</div>
 										</div>
 										<div class="col text-left">
 											<div class="mb-1">
 												<select id="numactwars" name="numactwars">
-													<option value="00">0</option>
-													<option value="01">1</option>
-													<option value="02">2</option>
-													<option value="03">3</option>
-													<option value="04">4</option>
-													<option value="05">5</option>
-													<option value="06">6</option>
-													<option value="07">7</option>
-													<option value="08">8</option>
-													<option value="09">9</option>
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
 												</select>
 											</div>
 											<div class="mb-1">
 												<select id="droughtlevel" name="droughtlevel"">
-													<option value="00">0</option>
-													<option value="01">1</option>
-													<option value="02">2</option>
-													<option value="03">3</option>
-													<option value="04">4</option>
-													<option value="05">5</option>
-													<option value="06">6</option>
-													<option value="07">7</option>
-													<option value="08">8</option>
-													<option value="09">9</option>
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
 												</select>
 											</div>
+											<div class="mb-1">
+												<select id="evilomens" name="evilomens">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+												</select>
+											</div>
+
 											<div>
 												<select id="pontifexmaximus" name="pontifexmaximus" style="display:none;">
 													<option value=""></option>
@@ -281,7 +297,7 @@
 							
 							</td>
 							
-							<td valign="top" width="22%" style="border-left: 1px solid #ddd;">
+							<td valign="top" width="20%" style="border-left: 1px solid #ddd;">
 							
 								<div class="container">
 									<div class="row text-center">
@@ -300,7 +316,8 @@
 								
 							</td>
 							
-							<td valign="top" width="15%" style="border-left: 1px solid #ddd;">
+							<!--
+							<td valign="top" width="20%" style="border-left: 1px solid #ddd;">
 							
 								<div class="container">
 									<div class="row text-center">
@@ -317,6 +334,8 @@
 								</div>
 								
 							</td>
+							-->
+
 						</tr>
 					</table>
 				
@@ -622,11 +641,10 @@
 		<input type="file" name="files[]" id="fileUpload" style="visibility:hidden" >
 		<!--<input type="button" value="Load Game" onclick="$('#fileUpload').click();" />-->
 
-		<div class="container mt-3 mb-3">
-			<div class="row text-center">
+		<!--<div class="container mt-3 mb-3">-->
+			<div class="row">
 				<div class="col text-left">
 					<button id="savegame" name="savegame" class="btn btn-danger mr-2" type="submit">Save Game</button>  
-					<!--<button id="loadgame" name="loadgame" class="btn btn-danger mr-2" onclick="$('#fileUpload').click();" >Load Game</button>-->
 					<button id="loadgame" name="loadgame" class="btn btn-danger mr-2" >Load Game</button>
 				</div>
 				<div class="col text-right">
@@ -634,7 +652,7 @@
 					<button id="genrevdetails" name="genrevdetails" class="btn btn-danger" type="submit">Generate Revenue with Details</button>
 				</div>
 			</div>	
-		</div>
+		<!--</div>-->
 
 		<!-- <textarea class="form-control mt-3 mb-3" id="output" name="output" placeholder="Revenue Output" ></textarea> -->
 

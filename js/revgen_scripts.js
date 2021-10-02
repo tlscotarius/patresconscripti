@@ -125,7 +125,7 @@ $(document).ready(function(){
 				case "#provsyr":			SetDropdown("#provsyr", myObj[x]);			break;
 				case "#provsyr_spoils":		SetCheckbox("#provsyr_spoils", myObj[x]);	break;
 				case "#provsyr_improved":	SetCheckbox("#provsyr_improved", myObj[x]);	break;
-				case "#evilomens":			SetCheckbox("#evilomens", myObj[x]);		break;
+				case "#evilomens":			SetDropdown("#evilomens", myObj[x]);		break;
 				default:
 				  // unknown control
 			  }
@@ -338,7 +338,7 @@ $(document).ready(function(){
 		returnValue += JSONDropdown("#provsyr");
 		returnValue += JSONCheckbox("#provsyr_spoils");
 		returnValue += JSONCheckbox("#provsyr_improved");
-		returnValue += JSONCheckbox("#evilomens");
+		returnValue += JSONDropdown("#evilomens");
 
 		returnValue = '{' + returnValue.slice(0,-1) + '}';
 
@@ -868,10 +868,13 @@ $(document).ready(function(){
 		//if (logDetails != 1) {log = "";}
 
 		// Check to see if Evil Omens is in effect
-		if ($("#evilomens").is(":checked"))
+		//if ($("#evilomens").is(":checked"))
+		var evilOmensLevelString = $("#evilomens").val();
+		var evilOmensLevel = parseInt(evilOmensLevelString);
+		if (evilOmensLevel > 0)
 		{
-			returnValue += -1;
-			log += "-1";
+			returnValue = returnValue - evilOmensLevel;
+			log += "-" + evilOmensLevelString;
 		}
 		log += ")";								// Add closing parenthesis for log
 

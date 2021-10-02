@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    color: #555;
+    color: #444;
 }
 
 iframe {
@@ -53,7 +53,6 @@ iframe {
 
 #title {
     background-color: #B22819;
-    color: green;/* #FEF9E7;*/
     height: 75px;
 }
 
@@ -63,7 +62,8 @@ iframe {
 /* -------------- */
 
 .navbar {
-    padding: 5px 15%;
+    /* padding: 5px 15%; */
+    padding: 0px 15% 5px;
 }
 
 .navbar-brand {
@@ -83,6 +83,11 @@ iframe {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin-top: 5px;
+}
+
+.bg-dark {
+    background-color: #B22819 !important;
+    height: 75px;
 }
 
 
@@ -135,6 +140,13 @@ iframe {
 
  .hero-button {
      margin-right: 0.5rem;
+     color: #FEF9E7 !important;
+     border-color: #FEF9E7;
+ }
+
+ .hero-button:hover {
+     color: #B22819 !important;
+     background-color: #FEF9E7;
  }
   
  @media (max-width: 992px) {
@@ -178,6 +190,10 @@ iframe {
 .game-card:hover {
     box-shadow: 2px 2px 5px #999;
     cursor: pointer;
+}
+
+.card {
+    background-color: #FEF9E7;
 }
 
 .card-header {
@@ -230,17 +246,23 @@ iframe {
 .testimonial-image {
     width: 10%;
     border-radius: 100%;
-    margin: 20px;
+    margin: 10px;
 }
 
 .testimonial-text {
     font-size: 3rem;
     line-height: 1.5;
     font-weight: 500;  
+    color: #FEF9E7;
 }
 
 .carousel-item {
     padding: 5% 10%;
+}
+
+.carousel-item em {
+    color: #FEF9E7;
+    font-weight: 400;
 }
 
 
@@ -308,16 +330,6 @@ iframe {
 	width: 350px;
 }
 
-.btn-outline-danger {
-    color: #B22819;
-    border-color: #B22819;
-}
-
-.btn-outline-danger:hover {
-    color: #FEF9E7;
-    background-color: #B22819;
-}
-
 .inner-section {
     padding: 1.5rem 0;
 }
@@ -334,45 +346,34 @@ iframe {
     padding-top: 3.0rem;
 }
 
-
-
-/*
-.section-title {
-    text-align: center;
-    padding-bottom: 30px;
-  }
+.active {
+    font-weight: bold;
+    color: #B22819;
+}
   
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-  }
 
-.section-title h2::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-  }
-  
-  .section-title h2::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #dc3545;
-    bottom: 0;
-    left: calc(50% - 20px);
-  }
-  */
-  
+/* ------- */
+/* Buttons */
+/* ------- */
+.btn-outline-danger {
+    color: #B22819;
+    border-color: #B22819;
+}
+
+.btn-outline-danger:hover {
+    color: #FEF9E7;
+    background-color: #B22819;
+}
+
+.btn-danger {
+    color:#FEF9E7;
+    border-color: #FEF9E7;
+    background-color: #B22819;
+}
+
+.btn-danger:hover {
+    background-color: #D22819;
+}
 
 /* ----------------- */
 /* Revenue Generator */
@@ -387,13 +388,99 @@ iframe {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
+.card-padding {
+    padding: 16px 5px 0 !important;
+}
+*/
 
-.btn-danger {
-    color: #FEF9E7;
-    background-color: #B22819;
+
+/* ------------------- */
+/* Living Rules v1.06a */
+/* ------------------- */
+a, a:hover, a:link, a:visited, a:active {color:#B22819;;}
+
+.bg-custom {background-color:#FEF9E7;}
+.bg-red {background-color:#dc3545;}/* #C0392B */
+.bg-yellow {background-color:#FEF9E7;}
+.signature {font-style: italic;}
+.indexglossary {padding-left: 2.5em;text-indent:-1.5em;}
+.text-living{color:rgb(194, 103, 38);}
+.text-advanced{color:royalblue;}
+.text-example{color:slategray; font-style: italic;}
+.text-green{color:limegreen;}
+.text-yellow{color:#FEF9E7;}
+.text-red{color:#dc3545;}
+strong {font-weight: 500; letter-spacing: 0.02rem;}
+/*.display-6{font-size:18px;color:#FEF9E7;padding: .5rem 1.0rem;}*/
+
+
+
+
+.nav-side {
+    padding: 0.75rem 0px 0px 0px !important;
 }
 
-.btn-danger:hover {
-    color: #FEF9E7;
-    background-color: #D22819;
+.nav-side-sub {
+    padding: 5px 0px 0px 0px !important;
+    font-size: 0.90rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display:inline;
 }
+
+.nav-item-side {
+    padding-left: 20px;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size: 0.75rem;
+}
+
+.side-sub-indent {
+    margin-left: 30px;
+}
+
+.side-sub-num {
+    vertical-align: top;
+}
+
+.side-sub-label {
+    margin-left: 3px;
+    display: inline-block;
+    width: 140px;
+}
+
+.side-sub-label a {
+    display: inline;
+}
+
+.megamenu-li {
+    position: static;
+}
+
+.megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.rule {
+    padding-top: 5px;
+}
+
+.rule-small {
+    font-size: 75%;
+    padding: 2px 0px 2px 20px;
+    margin: 0px;
+}
+
+.dropdown-menu {
+    margin-top: 0px;
+}
+

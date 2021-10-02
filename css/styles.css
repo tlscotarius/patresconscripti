@@ -470,6 +470,16 @@ strong {font-weight: 500; letter-spacing: 0.02rem;}
     box-shadow: 2px 2px 5px #999;
 }
 
+.megamenu a {
+    text-decoration: none;
+}
+
+.megamenu a:hover {
+    background-color: #B22819;
+    color: #FEF9E7;
+    padding: 4px;
+}
+
 .rule {
     padding-top: 5px;
 }

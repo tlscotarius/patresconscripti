@@ -36,7 +36,7 @@
       <!-- ------- -->
       <!-- Nav Bar -->
       <!-- ------- -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav id="navbar_tts" class="navbar navbar-expand-lg bg-dark navbar-dark">
         <a class="navbar-brand" href="index.html">patres conscripti</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
 
   </section>
 
-	<div class="container-fluid mt-3 suppress-padding-top">
+	<div id="main_tts" class="container-fluid mt-3 suppress-padding-top">
 		<h1 class="big-heading">Revenue Generator</h1>
 
 		<form id="revgenform">
@@ -583,18 +583,29 @@
 
 		<input type="file" name="files[]" id="fileUpload" style="visibility:hidden" >
 
-		<div class="row">
+		<div class="row mb-5">
 			<div class="col text-left">
 				<button id="savegame" name="savegame" class="btn btn-danger mr-2" type="submit">Save Game</button>  
 				<button id="loadgame" name="loadgame" class="btn btn-danger mr-2" >Load Game</button>
 			</div>
 			<div class="col text-right">
-				<button id="genrev" name="genrev" class="btn btn-danger mr-2" type="submit">Generate Revenue</button>  
-				<button id="genrevdetails" name="genrevdetails" class="btn btn-danger" type="submit">Generate Revenue with Details</button>
+				<button id="genrev-tts" name="genrev" class="btn btn-danger mr-2" type="submit">Generate Revenue</button>  
+				<button id="genrevdetails-tts" name="genrevdetails" class="btn btn-danger" type="submit">Generate Revenue with Details</button>
 			</div>
 		</div>	
 
+		<!-- The results of revenue generation will be displayed here -->
+		<div class="card"></div>
+			<div class="card-header display-6 text-yellow">Results</div>
+			<div class="card-body">
+				<div id="output-tts">
+
+				</div>
+			</div>
+		</div>
+
 	</div>
+
 
 	<!-- Trigger the modal with a button -->
 	<!-- <button type="button" class="btn btn-success openBtn">Open Modal</button> -->
@@ -634,8 +645,6 @@
     <p>All rights to The Republic of Rome Board Game are owned by Valley Games, Inc.</p>
 
   </footer>
-
-
 
 
   <!-- Custom scripts -->

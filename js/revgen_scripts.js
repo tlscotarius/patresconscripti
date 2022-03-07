@@ -167,10 +167,30 @@ $(document).ready(function(){
 		// Load the revenue log into the modal
 		$('.modal-body').html(FormatOutput(logRevenue, "html"));
 		$('.modal-body-roll20').text(FormatOutput(logRevenue, "roll20"));
-		//$('.modal-body-roll20').html(logRevenue, "roll20");
 
 		// Display the modal
 		$('#myModal').modal({show:true});
+		
+		return false;// Return false so that the the form is not cleared out
+	}
+
+	function GenerateRevenue_TTS(displayDetails)
+	{
+		// Generate the revenue log
+		var logRevenue = GenerateRevenueLog(displayDetails);
+
+		//logRevenue = FormatOutput(logRevenue, "roll20");
+		logRevenue = FormatOutput(logRevenue, "html");
+		//alert(logRevenue);
+
+		// Load the revenue log into the div
+		//$('.modal-body').html(FormatOutput(logRevenue, "html"));
+		//$('.modal-body-roll20').text(FormatOutput(logRevenue, "roll20"));
+
+		$('#output-tts').html(logRevenue);
+
+		// Display the modal
+		//$('#myModal').modal({show:true});
 		
 		return false;// Return false so that the the form is not cleared out
 	}
@@ -180,10 +200,7 @@ $(document).ready(function(){
 	// ---------------------------------------
 	$("#genrev").click(function(){
 //alert("genrev");
-		//showDetails = 0;
 		GenerateRevenue(0);
-		//$("#revgenform").validate();
-		//$("#revgenform").submit();
 	});	
 	
 	// ----------------------------------------------
@@ -191,12 +208,25 @@ $(document).ready(function(){
 	// ----------------------------------------------
 	$("#genrevdetails").click(function(){
 //alert("genrevdetails");
-		//showDetails = 1;
 		GenerateRevenue(1);
-		//$("#revgenform").validate();
-		//$("#revgenform").submit();
 	});	
 	
+	// ---------------------------------------
+	// Submit the form via the genrev-tts button.
+	// ---------------------------------------
+	$("#genrev-tts").click(function(){
+//alert("genrev-tts");
+		GenerateRevenue_TTS(0);
+	});	
+			
+	// ----------------------------------------------
+	// Submit the form via the genrevdetails-tts button.
+	// ----------------------------------------------
+	$("#genrevdetails-tts").click(function(){
+//alert("genrevdetails-tts");
+		GenerateRevenue_TTS(1);
+	});	
+
 	// -----------------------------------
 	// Save the game state to a JSON file
 	// -----------------------------------
